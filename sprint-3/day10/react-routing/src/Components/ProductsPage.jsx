@@ -17,14 +17,24 @@ export const ProductsPage = () => {
   }
   return (
     <>
+    <div style={{
+      boxShadow: "rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px",
+      margin:"auto",
+      marginTop:"30px",
+      width:"80%",
+      
+     
+    }}>
       <div
         style={{
           display: "grid",
           gridTemplateColumns: "repeat(4, 35%)",
-          justifyContent: "space-evenly",
-          width: "500px",
+          
+          width: "90%",
           margin: "auto",
           paddingTop: "50px",
+          marginLeft:"40px"
+          
         }}
       >
         <h4>Product Name</h4>
@@ -38,10 +48,14 @@ export const ProductsPage = () => {
             style={{
               display: "grid",
               gridTemplateColumns: "repeat(4, 35%)",
-              justifyContent: "space-evenly",
-              width: "500px",
+            
+              width: "90%",
               margin: "auto",
               paddingTop: "10px",
+              padding:"5px",
+              border:"1px solid green",
+              marginTop:"10px"
+
             }}
           >
             <div className="name">{el.title}</div>
@@ -50,6 +64,7 @@ export const ProductsPage = () => {
           </div>
         );
       })}
+      </div>
     </>
   );
 };

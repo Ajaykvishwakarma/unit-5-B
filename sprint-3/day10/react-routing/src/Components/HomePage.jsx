@@ -21,17 +21,24 @@ export const HomePage = () => {
         style={{
           display: "grid",
           gridTemplateColumns:"repeat(5, 1fr)",
+          gridGap:"10px",
           justifyContent: "space-evenly",
           paddingTop: "50px",
+          width:"95%",
+          margin:"auto"
+
+        
+          
         }}
       >
         {/* Iterate over products and show links */}
         {products.map((el) => {
           return <Link to={`products/${el.id}`} key={el.id}>
-            
+            <div style={{boxShadow:" rgba(0, 0, 0, 0.24) 0px 3px 8px", padding:"5px", height:"300px"}}>
             {/* Show product image and name */}
             <img style={{width : "150px", height : "150px"}} src = {el.image} alt=""/>
             <p>{el.title}</p>
+            </div>
             </Link>;
         })}
       </div>

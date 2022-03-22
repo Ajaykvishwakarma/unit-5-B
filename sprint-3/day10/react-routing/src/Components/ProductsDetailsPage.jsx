@@ -24,6 +24,10 @@ export const ProductsDetailsPage = () => {
           paddingTop: "50px",
           justifyContent: "center",
           textAlign: "left",
+          boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
+          width:"80%",
+          margin:"auto",
+          marginTop:"20px",
         }}
       >
         <img src={product.image}   alt={product.title} style={{width:"200px" , height : "200px"}} />
