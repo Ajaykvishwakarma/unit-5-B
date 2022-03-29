@@ -1,10 +1,13 @@
-import {createStore, combineReducers} from "redux";
-import { counterReducer} from "./Counter/reducer";
-import { todoReducer} from "./Todo/reducer";
+// import {createStore} from "redux";
+// import { reducer} from "./reducer";
+// export const store = createStore(reducer, {todo:[]});
+import {createStore} from "redux";
 
-const rootReducer = combineReducers({
-    count: counterReducer,
-    todo :todoReducer
-})
+import { reducer} from "./reducer";
 
-export const store = createStore(rootReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+// const rootReducer = combineReducers({
+    
+//     todo :todoReducer
+// })
+
+export const store = createStore(reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());

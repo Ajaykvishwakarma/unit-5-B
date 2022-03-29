@@ -10,10 +10,10 @@ export const counterReducer = (store = initState, {type, payload}) => {
 switch (type) {
     case ADD_COUNT: 
     localStorage.setItem("counter", store.count + payload)
-    return {...store, count: store.count + payload}
+    return {store, count: store.count + payload}
 
     case SUB_COUNT: 
-    return {...store, count: store.count - payload}
+    return {store, count: store.count - payload}
 
    
 

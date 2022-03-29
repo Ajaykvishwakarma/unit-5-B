@@ -19,7 +19,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "server": "json-server -p 3001 -w db.json",
+    "server": "json-server -p 8080 -w db.json",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
